@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUG WEAR</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="p10.jpg">
+    <script src="https://kit.fontawesome.com/8abe10f730.js" crossorigin="anonymous"></script>
+    <style>
+        .header {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: right;
+            animation-name: header;
+            animation-duration: 1s;
+        }
+
+        @keyframes header {
+            from {
+                background-color: white;
+            }
+
+            to {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        #h2 {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: whitesmoke;
+            text-align: center;
+            animation-name: lo;
+            animation-duration: 2s;
+        }
+
+        @keyframes lo {
+            from {
+                background-color: whitesmoke;
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            to {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: whitesmoke;
+            }
+        }
+
+        .li {
+            display: inline;
+            padding: 5px;
+            margin: 10px;
+            position: relative;
+        }
+
+        .a {
+            color: white;
+            border: 1px solid rgba(0, 0, 0, 0.01);
+            padding: 10px;
+            border-radius: 20px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .a:hover {
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.0185);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .a:active {
+            color: black;
+            background-color: beige;
+        }
+
+        .div0 {
+            text-align: center;
+            margin: 25px;
+            padding: 25px;
+            border: 1px solid rgba(128, 128, 128, 0.6);
+            border-radius: 25px;
+        }
+
+        .picu {
+            padding: 25px;
+            border: 1px solid rgba(255, 228, 196, 0.4);
+            border-radius: 10%;
+            transition-duration: 1s;
+            transition-delay: 0.1s;
+        }
+
+        .picu:hover {
+            box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            cursor: pointer;
+        }
+
+        .div1 {
+            background-color: rgba(255, 248, 220, 0.525);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: left;
+            height: 900px;
+        }
+
+        #img {
+            width: 1050px;
+            height: 850px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 40px;
+            border: 1px solid black;
+        }
+
+        .text {
+            position: relative;
+            bottom: 890px;
+            left: 1100px;
+            border: 1px solid black;
+            width: 300px;
+            height: 840px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .ili {
+            display: inline;
+            padding: 5px;
+            margin: 10px;
+            position: relative;
+        }
+
+        .div2 {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgb(238, 255, 100);
+        }
+
+        .b {
+            color: black;
+            border: 1px solid rgba(0, 0, 0, 0.01);
+            padding: 10px;
+            border-radius: 20px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        .b:hover {
+            margin: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .b:active {
+            color: black;
+            background-color: beige;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            margin: 20px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .pic {
+            width: 170px;
+            height: 300px;
+            border-radius: 30px;
+            display: inline-block;
+            padding: 5px;
+            filter: hue-rotate(180deg);
+            transition-duration: 0.5s;
+        }
+
+        .pic:hover {
+            filter: none;
+            border-radius: 45px;
+            padding: 2px;
+        }
+
+        .pic:active {
+            cursor: grabbing;
+        }
+
+        .div3 {
+            background-color: rgba(59, 59, 59, 0.1);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 20px;
+            cursor: grab;
+        }
+
+        .div4 {
+            display: flex;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 800px;
+            background-color: rgba(20, 20, 20, 0.1);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px;
+
+        }
+
+        @media screen and (max-width:600px) {
+            .b:hover {
+                margin: 10px;
+            }
+
+            .text {
+                position: relative;
+                bottom: 880px;
+                left: 6px;
+                width: 370px;
+                border: none;
+                color: gray;
+            }
+
+            #img {
+                width: 350px;
+            }
+
+            .div4 {
+                -webkit-mask-image: linear-gradient(black, transparent);
+                mask-image: linear-gradient (black, transparent);
+            }
+
+            .pic {
+                width: 140px;
+            }
+
+            #span1 {
+                position: relative;
+                left: -10px;
+            }
+
+            .header {
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                margin: 0px;
+            }
+
+            .a {
+                padding: 10px;
+                margin: 0px;
+            }
+
+            .li {
+                padding: 0px;
+            }
+
+            .picu {
+                width: 300px;
+            }
+
+            .picu:hover {
+                margin: 5px;
+            }
+
+            i {
+                width: 1px;
+                height: 1px;
+                margin: 10px;
+            }
+        }
+
+        @media screen and (min-width:600px) {
+            .div4 {
+                height: 300px;
+                max-width: 1400px;
+                overflow-y: hidden;
+                overflow-x: scroll;
+
+            }
+
+            .div5 {
+                display: flex;
+            }
+
+        }
+
+        i {
+            padding: 20px;
+            color: whitesmoke;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+
+        .i {
+            padding: 20px;
+            position: relative;
+            right: 45px;
+            transition-duration: 0.5s;
+            border-radius: 50px;
+        }
+
+        i:hover {
+            color: crimson;
+        }
+
+        i:active {
+            color: darkblue;
+        }
+
+        .dark-mood {
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid white;
+
+            .div1 {
+                background-color: rgb(44, 44, 44);
+            }
+
+            .text {
+                color: rgba(0, 0, 0, 0.7);
+            }
+
+            #img {
+                filter: hue-rotate(180deg);
+            }
+
+            .div2 {
+                background-color: rgba(0, 0, 0, 0.2);
+
+            }
+
+            .div3 .div4 {
+                background-color: rgb(44, 44, 44);
+            }
+
+            a {
+                background-color: rgba(127, 255, 212, 0.4);
+                color: rgb(0, 0, 0);
+                border: 0.1px solid rgba(0, 0, 0, 0.3);
+
+            }
+
+            a:hover {
+                background-color: rgba(0, 0, 0, 0.756);
+                border: 0.1px solid rgba(0, 0, 0, 0.3);
+            }
+
+            a:active {
+                background-color: white;
+            }
+
+            .picu:hover {
+                box-shadow: 0px 5px 50px rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        .pagination {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .pagination a {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.1);
+            border-radius: 25px;
+            display: inline-block;
+            cursor: pointer;
+            transition-duration: 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: rgb(202, 202, 202);
+        }
+
+        .pagination a:active {
+            background-color: black;
+            color: white;
+        }
+
+        section {
+            scroll-margin-top: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="h2">MUG WEAR</h2>
+    <br>
+    <div class="header">
+        <span id="span1" style="position: relative; right: 980px;">
+            <li class="li"><a class="a" onclick="myfuncion()">Dark/Light</a></li>
+        </span>
+        <li class="li"><a class="a">About</a></li>
+        <li class="li"><a class="a" href="#div3">Buy</a></li>
+        <li class="li"><a class="a">Contact</a></li>
+        <li class="li"><a class="a">Tel</a></li>
+    </div>
+    <div class="div0">
+        <div><img class="picu" src="p15.jpg"></div>
+        <hr>
+        <div><img class="picu" src="p16.jpg"></div>
+        <hr>
+        <div><img class="picu" src="p17.jpg"></div>
+        <hr>
+    </div>
+    <div class="div1">
+        <img src="p14.jpg" id="img">
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Nobis facilis harum soluta quidem ex veniam,<br>
+            ducimus atque eos dolores voluptatum<br>
+            voluptates quo ratione iure nulla facere ipsam expedita<br>
+            a illum necessitatibus cum rem deleniti?<br>
+            Commodi mollitia impedit voluptates voluptate architecto<br>
+            exercitationem provident itaque error autem,<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Nobis facilis harum soluta quidem ex veniam,<br>
+            ducimus atque eos dolores voluptatum<br>
+            voluptates quo ratione iure nulla facere ipsam expedita<br>
+            a illum necessitatibus cum rem deleniti?<br>
+            Commodi mollitia impedit voluptates voluptate architecto<br>
+            exercitationem provident itaque error autem,<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Nobis facilis harum soluta quidem ex veniam,<br>
+            ducimus atque eos dolores voluptatum<br>
+            voluptates quo ratione iure nulla facere ipsam expedita<br>
+            a illum necessitatibus cum rem deleniti?<br>
+            Commodi mollitia impedit voluptates voluptate architecto<br>
+            exercitationem provident itaque error autem,<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Nobis facilis harum soluta quidem ex veniam,<br>
+            ducimus atque eos dolores voluptatum<br>
+            voluptates quo ratione iure nulla facere ipsam expedita<br>
+            a illum necessitatibus cum rem deleniti?<br>
+            Commodi mollitia impedit voluptates voluptate architecto<br>
+            exercitationem provident itaque error autem,<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Nobis facilis harum soluta quidem ex veniam,<br>
+            ducimus atque eos dolores voluptatum<br>
+            voluptates quo ratione iure nulla facere ipsam expedita<br>
+        </div>
+    </div>
+    <div class="div2">
+        <li class="ili"><a class="b">About</a></li>
+        <li class="ili"><a class="b">Buy</a></li>
+        <li class="ili"><a class="b">Contact</a></li>
+        <li class="ili"><a class="b">Tel</a></li>
+    </div>
+    <div class="div3" id="div3">
+        <div class="div4">
+            <div class="div5">
+                <img class="pic" src="p3.jpg">
+                <img class="pic" src="p4.jpg">
+                <img class="pic" src="p5.jpg">
+                <img class="pic" src="p6.jpg">
+                <img class="pic" src="p3.jpg">
+                <img class="pic" src="p4.jpg">
+                <img class="pic" src="p5.jpg">
+                <img class="pic" src="p6.jpg">
+                <img class="pic" src="p3.jpg">
+                <img class="pic" src="p4.jpg">
+                <img class="pic" src="p5.jpg">
+                <img class="pic" src="p6.jpg">
+                <img class="pic" src="p3.jpg">
+                <img class="pic" src="p4.jpg">
+                <img class="pic" src="p5.jpg">
+                <img class="pic" src="p6.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <a>Back</a>
+        <a>1</a>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <a>6</a>
+        <a>Next</a>
+    </div>
+    <footer>
+        <p style="color: whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum.</p>
+        <i class="fa fa-instagram fa-3x"><a class="i"
+                href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fmug.wear%2Freel%2FC6k-Z84NOzt%2F&psig=AOvVaw2WrH2NDwnqWJwVAQLBO-WE&ust=1729362941565000&source=images&cd=vfe&opi=89978449&ved=0CAcQr5oMahcKEwjQ7KGQyZiJAxUAAAAAHQAAAAAQBA"
+                target="_blank"></a></i><!--chera kar nemikoneh??-->
+        <i class="fa fa-telegram fa-3x"><a class="i" target="_blank"></a></i>
+        <i class="fa fa-facebook fa-3x"><a class="i" href="https://www.google.com" target="_blank"></a></i>
+        <i class="fa fa-soundcloud fa-3x"><a class="i" href="https://www.google.com" target="_blank"></a></i>
+    </footer>
+    <script>
+        function myfuncion() {
+            var element = document.body;
+            element.classList.toggle("dark-mood");
+        }
+    </script>
+</body><!--server-->
+
+</html>
